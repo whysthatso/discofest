@@ -63,30 +63,34 @@ body {
 .wrapper {
     width: 90%;
     margin: 0 5%;
+    text-align: center;
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #fff;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+.footer-container {
+    border-top: 20px solid #fff;
 }
 
 .header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+.footer-container{
+    background: #fff;
 }
 
 .title {
-    color: white;
+    color: black;
 }
+
+.subtitle {
+    color: black;
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -107,17 +111,17 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+    color: black;
+    background: #fff;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: grey;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* ==============
@@ -129,12 +133,11 @@ nav a:hover {
 }
 
 .main article h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
+.main article h2 {
+    font-size: 2em;
 }
 
 .footer-container footer {
@@ -142,6 +145,7 @@ nav a:hover {
     padding: 20px 0;
 }
 
+.
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -180,7 +184,6 @@ nav a:hover {
 
     nav a {
         float: left;
-        width: 27%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -199,7 +202,7 @@ nav a:hover {
    ======================== */
 
     nav ul li {
-        display: inline;
+        display: inline-block;
     }
 
     .oldie nav a {
@@ -209,28 +212,39 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
 /* ============
     WIDE: Menu
    ============ */
 
     .title {
-        float: left;
+        font-size: 3.5em;
+        /*float: left;*/
     }
 
     nav {
-        float: right;
-        width: 38%;
+        float: left;
+        width: 100%;
+    }
+    nav a {
+        display: inline;
+        margin-bottom: 10px;
+        padding: 0px 10px;
+
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+
+        color: black;
+        background: #fff;
+    }
+
+    nav ul li a {
+    border-right: 1px solid black;
+    }
+
+    nav .last-child {
+        border-right: none;
+        width: 100%;
     }
 
 /* ============
@@ -239,13 +253,33 @@ nav a:hover {
 
     .main article {
         float: left;
-        width: 57%;
+        width: 100%;
+        text-align:left;
+        line-height:5em;
     }
 
-    .main aside {
-        float: right;
-        width: 28%;
+    .main article .headliner {
+      font-size: 3em;
     }
+
+    .main article .subliner {
+      font-size: 2.5em;
+    }
+
+    .main article h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .subtitle {
+        font-size: 2em;
+    }
+
+    .ticket-counter {
+      text-align: center;
+        font-size: 2em;
+    }
+
 }
 
 @media only screen and (min-width: 1140px) {
