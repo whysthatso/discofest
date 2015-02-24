@@ -311,11 +311,15 @@ a {
     }
 
     .main article .headliner {
-      font-size: 3em;
+      font-size: 5em;
+    }
+
+    .main article .headliner-loc {
+      font-size: 0.3em;
     }
 
     .main article .subliner {
-      font-size: 2em;
+      font-size: 3em;
     }
 
     .main article .support {
@@ -335,7 +339,7 @@ a {
 
     .ticket-counter {
       text-align: center;
-        font-size: 2em;
+      font-size: 2em;
     }
 
 }
