@@ -75,7 +75,11 @@ body {
 /* ===================
     ALL
    =================== */
-
+.badge {
+  position: fixed;
+  background:white;
+  border:1px solid black;
+}
 .header-container {
 }
 
@@ -168,8 +172,13 @@ a {
   font-size: 1.5em;
 }
 
+.main article .headliner-loc {
+  font-size: 0.3em;
+}
+
 .main article .subliner {
   font-size: 1.2em;
+  line-height: 1em;
 }
 
 .main article .support {
@@ -250,6 +259,10 @@ a {
       font-size: 2em;
     }
 
+    .main article .headliner-loc {
+      font-size: 0.3em;
+    }
+
     .main article .subliner {
       font-size: 1.5em;
     }
@@ -303,15 +316,18 @@ a {
    ============ */
 
     .main article {
+        margin-top: 2em;
         float: left;
         width: 100%;
-        text-align:left;
+        text-align:center;
         line-height:5em;
         color:black;
     }
 
     .main article .headliner {
       font-size: 5em;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
     }
 
     .main article .headliner-loc {
@@ -323,7 +339,7 @@ a {
     }
 
     .main article .support {
-      font-size: 0.6em;
+      font-size: 0.4em;
     }
 
     .main article h1 {
@@ -356,13 +372,33 @@ a {
     }
 
 
-        .main article .headliner a, .main article .subliner a {
-            color: white !important;
-        }
+    .main article .headliner a, .main article .subliner a {
+        color: white !important;
+    }
 
-        .main article .headliner a:hover, .main article .subliner a:hover {
-            color:black !important;
-        }
+    .main article .headliner a:hover, .main article .subliner a:hover {
+        color:black !important;
+    }
+
+    .main article .headliner {
+      font-size: 5em;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      line-height: 70%;
+    }
+
+    .main article .headliner-loc {
+      font-size: 0.3em;
+    }
+
+    .main article .subliner {
+      font-size: 3em;
+      line-height: 1em
+    }
+
+    .main article .support {
+      font-size: 0.4em;
+    }
 
 }
 
@@ -966,15 +1002,14 @@ img.mfp-img {
   text-align: left;
 }
 .white-popup img {
-  width: 100%;
-  max-width: 610px;
+  max-width: 100%;
   height: auto;
 }
 .white-popup img.timetable {
   max-width: 100%;
 }
 .white-popup ul {
-  text-align: left;
+  text-align: center;
   margin: 0;
 }
 .white-popup ul li {
